@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@700&family=Pontano+Sans:wght@300&family=Stint+Ultra+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Moirai+One&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+#heroes_home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap row;
+ 
+}
+#heroes_home .menu_bar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.66);
+ 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#heroes_home .menu_bar ul{
+    width: 48%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: end;
+    margin: 10px;
+}
+#heroes_home .menu_bar  h1{
+    width: 28%;
+    margin:20px;
+    font-family: 'Moirai One', system-ui;
+   font-size: 49px;
+   color: white;
+}
+#heroes_home .menu_bar ul li{
+    width: 20%;
+    margin: 25px;
+    height: 21px;
+    text-align: center;
+  list-style: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+
+  font-size: 20px;
+  color: white;
+}
+#heroes_home .menu_bar ul li img{
+    width: 15px;
+    height: 15px;
+    color: white;
+    margin-right: 4px;
+  
+    
+}
+#heroes_home .menu_bar  .hamburguermenu{
+    display: none;
+}
+#heroes_home .content_heroes{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:1293px) {
+    #heroes_home .menu_bar{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    #heroes_home .menu_bar ul{
+        justify-content: start;
+        margin: 0px;
+       
+    }
+    #heroes_home .menu_bar  h1{
+        width: 40%;
+        margin:15px;
+ 
+       font-size: 30px;
+    
+    }
+    #heroes_home .menu_bar ul li{
+
+      font-size: 18px;
+   
+    }
+
+}
+@media (max-width:822px) {
+    #heroes_home .menu_bar{
+
+        justify-content: space-evenly;
+
+    }
+    #heroes_home .menu_bar ul{
+       display: none;
+       
+    }
+    #heroes_home .menu_bar  h1{
+
+        margin:1px;
+       font-size: 40px;
+    
+    }
+    #heroes_home .menu_bar  .hamburguermenu{
+        display: block;
+    }
+    
+} 
+@media (max-width:477px) {
+    #heroes_home .menu_bar{
+
+        justify-content: space-between;
+
+    }
+    #heroes_home .menu_bar  h1{
+        margin-left:30px;
+       font-size: 30px;
+    
+    }
+    #heroes_home .menu_bar  .hamburguermenu{
+        margin-right:30px;
+    }
+    
+} 
+@media (max-width:361px) {
+
+    #heroes_home .menu_bar  h1{
+        width: 55%;
+        font-size: 1.8rem;
+    
+    
+    }
+} 
+@media (max-width:299px) {
+
+    #heroes_home .menu_bar  h1{
+        width: 30%;
+        font-size: 1.6rem;
+    
+    }
+} 

@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../../assets/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: Black;
+  margin-top: 50px;
+border-radius: 5px;
+display: flex;
+flex-flow: wrap row;
+}
+.banner div, .banner .info{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}

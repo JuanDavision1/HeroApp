@@ -1,0 +1,8 @@
+
+<div id="heroes_list">
+    <app-banner></app-banner> 
+    <div  *ngFor="let item of heroesArr " id="list_heroes" >
+        <heroes-hero-card [herohijo] ="item"></heroes-hero-card>
+
+    </div>
+</div>

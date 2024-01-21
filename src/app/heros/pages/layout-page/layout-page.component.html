@@ -1,0 +1,45 @@
+<!-- 
+  <mat-sidenav-container fullscreen>
+    <mat-sidenav #side mode="push" [ngStyle]="{width:'250px'}">
+        <mat-toolbar>
+            <span>Menu</span>
+            <span class="spacer"></span>
+            <button mat-icon-button (click)="side.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+        <mat-nav-list>
+            <mat-list-item *ngFor="let item of sideberItems" [routerLink]="item.url" (click)="side.toggle()"><mat-icon
+                    matListIcon>{{item.icon}}</mat-icon>
+                {{item.label}}
+                
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="side.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+        <span>{{user?.email}}</span>
+        <button mat-button (click)="onlogot()">Logout</button>
+    </mat-toolbar>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-container>   -->
+
+
+ <div id="heroes_home" class="interactive"  >
+ <div class="menu_bar">
+    <h1>See Your Hero</h1>
+    <app-hamburguermenu [class]="'hamburguermenu'"></app-hamburguermenu>
+    <ul>
+        <li *ngFor="let item of sideberItems" [routerLink]="item.url"> <img [src]=" item.icon" alt="item.label" >{{item.label}}  </li>
+    </ul>
+ </div>
+ <div class="content_heroes">
+    
+    <router-outlet></router-outlet>
+ </div>
+</div> 

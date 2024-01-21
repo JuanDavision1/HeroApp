@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@700&family=Pontano+Sans:wght@300&family=Stint+Ultra+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Moirai+One&display=swap');
+:host {
+  display: block;
+}
+button img{
+  width: 30px;
+  height: 30px;
+}
+mat-menu button{
+  font-family: 'Playfair Display', serif;
+}
