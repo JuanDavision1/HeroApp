@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@700&family=Pontano+Sans:wght@300&family=Stint+Ultra+Expanded&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Moirai+One&display=swap');
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -15,17 +17,18 @@
 }
 #heroes_home .menu_bar{
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.66);
+    
+ margin-bottom: 100px;
  
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ 
 }
 #heroes_home .menu_bar ul{
     width: 48%;
@@ -66,12 +69,11 @@
 }
 #heroes_home .content_heroes{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 @media (max-width:1293px) {
     #heroes_home .menu_bar{
         width: 100%;
-        height: 100px;
         display: flex;
         flex-flow: wrap row;
         justify-content: center;

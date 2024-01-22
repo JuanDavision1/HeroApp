@@ -1,3 +1,38 @@
 :host {
   display: block;
 }
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@700&family=Pontano+Sans:wght@300&family=Stint+Ultra+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Moirai+One&display=swap');
+
+div{
+width: 100%;
+height: 500px;
+  display: flex;
+  flex-flow: wrap column;
+}
+div .main_card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+ 
+  justify-content: space-between;
+}
+div .main_card .header{
+  width: 100%;
+  height: 50%;
+  background-color: green;
+
+}
+div .main_card .header h4{
+  
+}
+div .main_card .body_card{
+  width: 100%;
+  height: 30%;
+  background-color: pink;
+}
+div .main_card .actions{
+  width: 100%;
+  height: 20%;
+}

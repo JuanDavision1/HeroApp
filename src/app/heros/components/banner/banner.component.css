@@ -1,15 +1,18 @@
 :host {
   display: block;
 }
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@700&family=Pontano+Sans:wght@300&family=Stint+Ultra+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Moirai+One&display=swap');
 .banner{
   width: 100%;
-  height: 100vh;
-  background-image: url('../../../../assets/banner.jpg');
+  height: 90vh;
+  background-image: url('../../../../assets/prueba1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: Black;
-  margin-top: 50px;
+ 
 border-radius: 5px;
 display: flex;
 flex-flow: wrap row;
@@ -17,6 +20,75 @@ flex-flow: wrap row;
 .banner div, .banner .info{
   width: 50%;
   display: flex;
-  justify-content: end;
-  align-items: flex-end;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 80px;
+
 }
+.banner div, .banner .info h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  width: 70%;
+  font-size: 50px;
+  color: rgb(253, 253, 253);
+
+}
+
+
+.banner .info h1
+{
+    position: relative;
+}
+
+.banner .info h1:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  top: 140%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out;
+}
+.banner .info h1:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+ .banner .info p{
+  width: 65%;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.banner .info #banner_btn{
+  width: 30%;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  font-style: italic;
+  font-weight: 200;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 11px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  margin-top: 10px;
+}
+.banner .info #banner_btn:hover{
+  transition: all 300ms;
+  transform: scale(.9);
+}
+

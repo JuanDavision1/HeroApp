@@ -5,11 +5,15 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-banner',
   template: `
   <div class="banner">
-    <div></div>
+   
     <div class="info">
-    <h1>sdfsdfdsfdfsdfsdf </h1>
-    <p>sdfsdfsfsf </p>
-    <button>vbn</button>
+    <h1>{{ 'About this Project ' | titlecase}}</h1>
+    <p>{{'
+This website lets you create your own superhero, one who represents your own values and beliefs.
+With our tools and resources, you can bring your superhero to life. Share your creation with the world and inspire others to be heroes.'}} </p>
+    <a id="banner_btn">Explore!</a>
+    <button type="button" class="btn">Base class</button>
+    <div></div>
     </div>
 
   </div>

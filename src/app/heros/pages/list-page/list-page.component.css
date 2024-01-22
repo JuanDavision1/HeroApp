@@ -1,9 +1,22 @@
 #heroes_list{
 width: 100%;
 height: 100vh;
-
+display: flex;
+flex-flow: wrap row;
+justify-content: center;
 }
 #heroes_list  app-banner{
 
 margin-top: -100px;
+margin-bottom: 30px;
+ }
+ #heroes_list #list_heroes{
+    width: 25%;
+
+ margin: 20px;
+    padding: 20px;
+ margin-bottom: 10%;
+
+ outline:  3px solid rgba(255, 255, 255, 0.3);;
+ 
  }
